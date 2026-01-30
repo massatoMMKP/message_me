@@ -1,9 +1,82 @@
-<div class="text-center my-4">
-  <span class="d-inline-flex align-items-center justify-content-center 
-               rounded-circle border"
-        style="width: 64px; height: 64px;">
-    <i class="fa-solid fa-coffee fs-4 text-danger"></i>
-  </span>
+<div class="container">
+  <div class="text-center my-4">
+    <span class="d-inline-flex align-items-center justify-content-center rounded-circle border p-3">
+      <i class="fa-solid fa-coffee fs-4" style="color: #f0ad4e;"></i>
+    </span>
+    <h3 class="mt-3 fw-semibold">Friends</h3>
+  </div>
 
-  <h3 class="mt-2 fw-semibold">Friends</h3>
+  <%# Conteúdo Principal %>
+  <div class="row mt-4">
+    <div class="col-9">
+      <div class="card shadow-lg chatbox d-flex flex-column" style="min-height: 550px;">
+        
+        <div class="card-body p-4 flex-grow-1">
+
+          <div class="list-group list-group-flush">
+            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
+              <a href="#" class="text-decoration-none fw-bold">Elliot Fu</a>
+              <span class="text-muted">added</span>
+              <a href="#" class="text-decoration-none fw-bold">Jenny Hess</a>
+              <span class="text-muted">as a friend</span>
+            </div>
+            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
+              <a href="#" class="text-decoration-none fw-bold">Stevie Feliciano</a>
+              <span class="text-muted">added</span>
+              <a href="#" class="text-decoration-none fw-bold">Elliot Fu</a>
+              <span class="text-muted">as a friend</span>
+            </div>
+            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
+              <a href="#" class="text-decoration-none fw-bold">Helen Troy</a>
+              <span class="text-muted">added</span>
+              <a href="#" class="text-decoration-none fw-bold">Christian Rocha</a>
+              <span class="text-muted">as a friend</span>
+            </div>
+            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
+              <em>Christian Rocha</em>: Test message
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 border-top bg-light rounded-bottom">
+          <form>
+            <div class="input-group">
+              <input 
+                type="text" 
+                class="form-control bg-white" 
+                placeholder="Enter a message..." 
+                aria-label="Message"
+                style="font-size: 0.9rem;">
+              
+              <button 
+                class="btn btn-warning text-white" 
+                type="submit" 
+                style="background-color: #f0ad4e; border-color: #f0ad4e;"
+                onmouseup="this.blur()">
+                <i class="fas fa-edit"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card shadow-lg chatbox border-0">
+        <div class="list-group list-group-flush bg-dark rounded overflow-hidden menu-inverted">
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-0 active py-2">
+            Home
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-0 py-2">
+            Messages
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-0 py-2">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+

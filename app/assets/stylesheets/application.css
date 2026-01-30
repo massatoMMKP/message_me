@@ -1,4 +1,20 @@
+.menu-inverted .list-group-item-action:hover {
+  background-color: #4a4a4a !important;
+  color: #ffffff !important;
+}
+
+.menu-inverted .list-group-item.active {
+  background-color: #5a5a5a !important;
+  color: #ffffff !important;
+}
+
+.chatbox {
+  height: 450px;
+}
 
 
-
+btn:focus, .btn:active {
+    box-shadow: none !important;
+    outline: none !important;
+  }
 
