@@ -11,7 +11,7 @@
       <!-- Menu à esquerda -->
       <ul class="navbar-nav mb-lg-0">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Chatroom</a>
+          <%= link_to "Chatroom", root_path, class: "nav-link" %>
         </li>
 
        <li class="nav-item ">
@@ -28,13 +28,13 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Log out</a></li>
-            <li><a class="dropdown-item" href="#">Log in</a></li>
+            <%= link_to "Log in", login_path, class: "dropdown-item" %>
             <li><a class="dropdown-item" href="#">Sign in</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="btn btn-primary" href="#">Login</a>
+          <%= link_to "Log in", login_path, class: "btn btn-primary" %>
         </li>
 
       </ul>
