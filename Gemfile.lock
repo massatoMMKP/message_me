@@ -83,7 +83,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.21.1)
       msgpack (~> 1.2)
-    brakeman (7.1.2)
+    brakeman (8.0.1)
       racc
     builder (3.3.0)
     capybara (3.40.0)
@@ -381,7 +381,6 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kamal
-  minitest (~> 5.0)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.4)
