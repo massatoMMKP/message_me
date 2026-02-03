@@ -20,7 +20,7 @@
     <div class="row align-items-center">
       <!-- Login -->
       <div class="col-md-6 pe-md-5">
-        <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+        <%= form_with scope: :session, url: login_path, local: true do |f| %>
           <div class="mb-3 text-start">
             <%= f.label :username, "Username", class: "form-label small fw-bold" %>
             <div class="input-group">

@@ -12,30 +12,9 @@
       <div class="card shadow-lg chatbox d-flex flex-column" style="min-height: 550px;">
         
         <div class="card-body p-4 flex-grow-1">
-
-          <div class="list-group list-group-flush">
-            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
-              <a href="#" class="text-decoration-none fw-bold">Elliot Fu</a>
-              <span class="text-muted">added</span>
-              <a href="#" class="text-decoration-none fw-bold">Jenny Hess</a>
-              <span class="text-muted">as a friend</span>
-            </div>
-            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
-              <a href="#" class="text-decoration-none fw-bold">Stevie Feliciano</a>
-              <span class="text-muted">added</span>
-              <a href="#" class="text-decoration-none fw-bold">Elliot Fu</a>
-              <span class="text-muted">as a friend</span>
-            </div>
-            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
-              <a href="#" class="text-decoration-none fw-bold">Helen Troy</a>
-              <span class="text-muted">added</span>
-              <a href="#" class="text-decoration-none fw-bold">Christian Rocha</a>
-              <span class="text-muted">as a friend</span>
-            </div>
-            <div class="list-group-item border-0 ps-0 py-2" style="font-size: 0.95rem;">
-              <em>Christian Rocha</em>: Test message
-            </div>
-          </div>
+          
+          <%= render @messages %>
+          
         </div>
 
         <div class="p-3 border-top bg-light rounded-bottom">
