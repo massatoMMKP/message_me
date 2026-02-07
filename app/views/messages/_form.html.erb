@@ -1,0 +1,20 @@
+ <%= form_with model: message,
+                        id: "message_form",
+                        html: { class: "d-flex gap-2", role: "form" } do |f| %>
+
+            <div class="input-group">
+              <%= f.text_field :body,
+                               class: "form-control bg-white",
+                               placeholder: "Enter a message...",
+                               aria: { label: "Message" },
+                               style: "font-size: 0.9rem;" %>
+
+              <%= button_tag type: "submit",
+                             class: "btn btn-warning text-white",
+                             style: "background-color: #f0ad4e; border-color: #f0ad4e;",
+                             onmouseup: "this.blur()" do %>
+                <i class="fas fa-edit"></i>
+              <% end %>
+            </div>
+
+          <% end %>

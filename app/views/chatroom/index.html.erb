@@ -10,33 +10,15 @@
   <div class="row mt-4">
     <div class="col-9">
       <div class="card shadow-lg chatbox d-flex flex-column" style="min-height: 550px;">
+        <%= turbo_stream_from "chatroom_channel" %>
         
-        <div class="card-body p-4 flex-grow-1">
+        <div class="card-body p-4 flex-grow-1" id= "messages">
+
           <%= render @messages %>
         </div>
 
         <div class="p-3 border-top bg-light rounded-bottom">
-          <%= form_with model: @message,
-                        url: messages_path,
-                        local: true,
-                        html: { class: "d-flex gap-2", role: "form" } do |f| %>
-
-            <div class="input-group">
-              <%= f.text_field :body,
-                               class: "form-control bg-white",
-                               placeholder: "Enter a message...",
-                               aria: { label: "Message" },
-                               style: "font-size: 0.9rem;" %>
-
-              <%= button_tag type: "submit",
-                             class: "btn btn-warning text-white",
-                             style: "background-color: #f0ad4e; border-color: #f0ad4e;",
-                             onmouseup: "this.blur()" do %>
-                <i class="fas fa-edit"></i>
-              <% end %>
-            </div>
-
-          <% end %>
+         <%= render partial: "messages/form", locals: { message: Message.new } %>
         </div>
       </div>
     </div>
