@@ -12,7 +12,7 @@
       <div class="card shadow-lg chatbox d-flex flex-column" style="min-height: 550px;">
         <%= turbo_stream_from "chatroom_channel" %>
         
-        <div class="card-body p-4 flex-grow-1" id= "messages">
+        <div class="card-body p-4 flex-grow-1" id= "messages" data-controller="scroll" data-action="turbo:before-stream-render@document->scroll#scrollToBottom">
 
           <%= render @messages %>
         </div>
