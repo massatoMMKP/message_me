@@ -131,4 +131,10 @@ btn:focus, .btn:active {
   color: white;
 }
 
+#messages {
+  height: 15em;
+  overflow-y: auto;
+
+};
+
 

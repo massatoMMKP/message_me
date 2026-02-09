@@ -5,11 +5,11 @@ class MessagesController < ApplicationController
     message = current_user.messages.build(message_params)
     if message.save
      
-      
     end
   end
 
   private
+
 
   def message_params
     params.require(:message).permit(:body)
