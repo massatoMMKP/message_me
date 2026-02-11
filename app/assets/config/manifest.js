@@ -1,0 +1,4 @@
+//= link_tree ../builds .js
+//= link_tree ../../javascript .js
+//= link_tree ../../../vendor/javascript .js
+//= link_tree ../stylesheets .css
