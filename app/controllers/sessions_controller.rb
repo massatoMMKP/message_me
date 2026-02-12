@@ -1,11 +1,9 @@
 class SessionsController < ApplicationController
-
-  before_action :logged_in_redirect, only: [:new, :create]
+  before_action :logged_in_redirect, only: [ :new, :create ]
   def new
   end
 
   def create
-
     username = params[:session][:username]
     password = params[:session][:password]
 
@@ -32,5 +30,4 @@ class SessionsController < ApplicationController
       redirect_to root_path, alert: "You are already logged in."
     end
   end
-  
 end
