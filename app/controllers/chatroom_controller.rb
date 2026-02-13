@@ -5,5 +5,4 @@ before_action :require_user
     @message = Message.new
     @messages = Message.all
   end
-
 end
